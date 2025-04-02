@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Workflow
+metadata:
+  name: example-workflow
+  description: An example workflow
+spec:
+  owner: john@example.com
+  steps:
+    - name: first-step
+      description: First step in the workflow
+      type: manual
+    - name: second-step
+      description: Second step in the workflow
+      type: automated
